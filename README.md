@@ -12,7 +12,7 @@ This repository contains the source code for a desktop planner application devel
 - Easily schedule and organize your day with a user-friendly interface.
 - Supports customization to fit your specific planning needs.
 
-  ## Usage
+## Usage
 
 This JavaFX Desktop Planner project serves as a valuable learning resource for students and aspiring developers interested in the following areas:
 
