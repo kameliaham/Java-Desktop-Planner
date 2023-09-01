@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1211.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.Controllers.tasksViewController">
+   <children>
+      <Pane fx:id="panePage" layoutX="-4.0" layoutY="1.0" prefHeight="625.0" prefWidth="1215.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="104.0" layoutY="25.0" prefHeight="70.0" prefWidth="201.0" text="My tasks">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="86.0" layoutY="101.0" prefHeight="456.0" prefWidth="1089.0" style="-fx-background-color: white; -fx-border-color: #a30000;" vbarPolicy="NEVER">
+               <content>
+                  <HBox fx:id="tasksHbox" prefHeight="461.0" prefWidth="1105.0" style="-fx-background-color: white;">
+                     <padding>
+                        <Insets left="15.0" top="15.0" />
+                     </padding>
+                  </HBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

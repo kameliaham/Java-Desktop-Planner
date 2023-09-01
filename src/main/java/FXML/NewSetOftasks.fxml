@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="newTaskspane" prefHeight="571.0" prefWidth="469.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 50;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.Controllers.NewSettasksController">
+   <children>
+      <Label layoutX="38.0" layoutY="26.0" prefHeight="45.0" prefWidth="184.0" text="Add set of Tasks">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="407.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeNewtasks" style="-fx-background-color: #a30000; -fx-background-radius: 30;" text="x" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="24.0" layoutY="81.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="139.0" style="-fx-background-color: None;" text="Task Name:" textFill="#848484">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="taskName" layoutX="51.0" layoutY="120.0" prefHeight="28.0" prefWidth="139.0" promptText="TaskName" style="-fx-background-color: white; -fx-border-color: black;" />
+      <Button layoutX="238.0" layoutY="81.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="202.0" style="-fx-background-color: None;" text="Task Duration (in minutes):" textFill="#848484">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="taskDuration" layoutX="248.0" layoutY="119.0" prefHeight="29.0" prefWidth="139.0" promptText="TaskDuration" style="-fx-background-color: white; -fx-border-color: black;" />
+      <Button layoutX="24.0" layoutY="166.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="101.0" style="-fx-background-color: None;" text="Priority:" textFill="#848484">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="prioritylist" layoutX="51.0" layoutY="205.0" prefHeight="28.0" prefWidth="139.0" style="-fx-background-color: white; -fx-border-color: black;" />
+      <Button layoutX="238.0" layoutY="166.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="101.0" style="-fx-background-color: None;" text="Category:" textFill="#848484">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="categorylist" layoutX="248.0" layoutY="205.0" prefHeight="28.0" prefWidth="139.0" style="-fx-background-color: white; -fx-border-color: black;" />
+      <Button layoutX="248.0" layoutY="362.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="139.0" style="-fx-background-color: None;" text="Blocked Task:" textFill="#848484">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="blokedchec" layoutX="387.0" layoutY="370.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="18.0" style="-fx-background-color: white;" />
+      <Button layoutX="38.0" layoutY="501.0" mnemonicParsing="false" onAction="#saveTasksAuto" prefHeight="29.0" prefWidth="184.0" style="-fx-background-color: #a30000; -fx-background-radius: 50;" text="Save Tasks" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="24.0" layoutY="328.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="101.0" style="-fx-background-color: None;" text="Project:" textFill="#848484">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="projectList" layoutX="51.0" layoutY="367.0" prefHeight="28.0" prefWidth="139.0" style="-fx-background-color: white; -fx-border-color: black;" />
+      <Button layoutX="24.0" layoutY="251.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="101.0" style="-fx-background-color: None;" text="Type:" textFill="#848484">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="typeTask" layoutX="51.0" layoutY="290.0" prefHeight="28.0" prefWidth="139.0" style="-fx-background-color: white; -fx-border-color: black;" />
+      <Button layoutX="229.0" layoutY="254.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="120.0" style="-fx-background-color: None;" text="Deadline:" textFill="#848484">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="deadlineTask" layoutX="248.0" layoutY="292.0" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: white; -fx-border-color: black;" />
+      <Button layoutX="238.0" layoutY="500.0" mnemonicParsing="false" onAction="#addAnewTask" prefHeight="45.0" prefWidth="202.0" style="-fx-background-color: white; -fx-background-radius: 50; -fx-border-color: #a30000; -fx-border-width: 3; -fx-border-radius: 50;" text="Add a new Task">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

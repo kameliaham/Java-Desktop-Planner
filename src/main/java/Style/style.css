@@ -1,0 +1,30 @@
+.button {
+   -fx-background-color : WHITE;
+}
+
+.button:hover {
+   -fx-background-color : #a6a6a6;
+}
+
+.button:pressed {
+   -fx-background-color : #fcc0ed;
+}
+
+.button:focused {
+   -fx-text-fill: #e06cb6;
+   -fx-background-color: #fcc0ed;
+}
+
+
+
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+    -fx-background-color: #0092a5; /* Change to your desired color on hover */
+}
+
+.spinner .increment-arrow-button:pressed,
+.spinner .decrement-arrow-button:pressed {
+    -fx-background-color:  #6be3f2; /* Change to your desired color when pressed */
+}
+
+

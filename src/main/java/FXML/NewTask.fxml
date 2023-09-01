@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="newTaskpane" prefHeight="585.0" prefWidth="320.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 50;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.Controllers.NewTaskController">
+   <children>
+      <Label layoutX="46.0" layoutY="36.0" prefHeight="45.0" prefWidth="184.0" text="Add a new Task">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="253.0" layoutY="20.0" mnemonicParsing="false" onAction="#closeNewtask" style="-fx-background-color: #a30000; -fx-background-radius: 30;" text="x" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="17.0" layoutY="81.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="139.0" style="-fx-background-color: None;" text="Task Name:" textFill="#848484">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="taskName" layoutX="71.0" layoutY="120.0" prefHeight="28.0" prefWidth="202.0" promptText="TaskName" style="-fx-background-color: white; -fx-border-color: black;" />
+      <Button layoutX="24.0" layoutY="163.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="242.0" style="-fx-background-color: None;" text="Task Duration (in minutes):" textFill="#848484">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="taskDuration" layoutX="70.0" layoutY="202.0" prefHeight="29.0" prefWidth="202.0" promptText="TaskDuration" style="-fx-background-color: white; -fx-border-color: black;" />
+      <Button layoutX="19.0" layoutY="231.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="101.0" style="-fx-background-color: None;" text="Priority:" textFill="#848484">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="prioritylist" layoutX="72.0" layoutY="270.0" prefHeight="28.0" prefWidth="202.0" style="-fx-background-color: white; -fx-border-color: black;" />
+      <Button layoutX="24.0" layoutY="309.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="101.0" style="-fx-background-color: None;" text="Category:" textFill="#848484">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="categorylist" layoutX="72.0" layoutY="348.0" prefHeight="28.0" prefWidth="202.0" style="-fx-background-color: white; -fx-border-color: black;" />
+      <Button layoutX="24.0" layoutY="463.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="154.0" style="-fx-background-color: None;" text="Blocked Task:" textFill="#848484">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="blokedchec" layoutX="169.0" layoutY="471.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="18.0" style="-fx-background-color: white;" />
+      <Button layoutX="121.0" layoutY="518.0" mnemonicParsing="false" onAction="#saveTacheManuelle" prefHeight="22.0" prefWidth="101.0" style="-fx-background-color: #a30000; -fx-background-radius: 50;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="19.0" layoutY="384.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="101.0" style="-fx-background-color: None;" text="Project:" textFill="#848484">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="projectList" layoutX="72.0" layoutY="423.0" prefHeight="28.0" prefWidth="202.0" style="-fx-background-color: white; -fx-border-color: black;" />
+   </children>
+</Pane>

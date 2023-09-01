@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1211.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.Controllers.ProjectController">
+   <children>
+      <Pane fx:id="panePage" layoutX="-4.0" layoutY="1.0" prefHeight="625.0" prefWidth="1215.0" style="-fx-background-color: white;">
+         <children>
+            <VBox layoutX="164.0" layoutY="151.0" prefHeight="402.0" prefWidth="962.0" style="-fx-background-color: white; -fx-border-color: #a30000;">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="403.0" prefWidth="969.0" style="-fx-background-color: white;" vbarPolicy="ALWAYS">
+                     <content>
+                        <VBox fx:id="ProjectListBox" prefHeight="401.0" prefWidth="966.0" style="-fx-background-color: white;">
+                           <children>
+                              <AnchorPane prefHeight="401.0" prefWidth="1007.0" style="-fx-background-color: white;" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <Button layoutX="379.0" layoutY="58.0" mnemonicParsing="false" onAction="#addProjects" prefHeight="55.0" prefWidth="55.0" style="-fx-background-color: #a30000; -fx-background-radius: 50;" text="+" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="173.0" layoutY="43.0" prefHeight="70.0" prefWidth="201.0" text="Projects">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </Label>
+            <Pane fx:id="newProject" layoutX="450.0" layoutY="30.0" prefHeight="420.0" prefWidth="320.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 50;" visible="false">
+               <children>
+                  <Label layoutX="46.0" layoutY="36.0" prefHeight="45.0" prefWidth="184.0" text="Create a new Project">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="253.0" layoutY="20.0" mnemonicParsing="false" onAction="#closeNewproject" style="-fx-background-color: #a30000; -fx-background-radius: 30;" text="x" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="22.0" layoutY="96.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="139.0" style="-fx-background-color: None;" text="Project Name:" textFill="#848484">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="projectName" layoutX="72.0" layoutY="131.0" prefHeight="28.0" prefWidth="202.0" promptText="project Name" style="-fx-background-color: white; -fx-border-color: black;" />
+                  <Button layoutX="103.0" layoutY="347.0" mnemonicParsing="false" onAction="#saveProject" prefHeight="22.0" prefWidth="101.0" style="-fx-background-color: #a30000; -fx-background-radius: 50;" text="Save" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="24.0" layoutY="184.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="179.0" style="-fx-background-color: None;" text="Project Description:" textFill="#848484">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <TextArea fx:id="projectDescription" layoutX="71.0" layoutY="232.0" prefHeight="88.0" prefWidth="204.0" promptText="project description" style="-fx-background-color: white; -fx-border-color: black;" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
